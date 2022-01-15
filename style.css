@@ -95,7 +95,6 @@ a, a:hover, a:focus, a:active {
     top: 18px;
     z-index: 1;
     border-radius: 100%;
-    box-shadow: 0 0 0.1em #000, 0 0 0.2em #000, 0 0 0.3em #000, 0 0 0.4em var(--black-clr), 0 0 0.6em var(--black-clr), 0 0 0.8em var(--black-clr), 0 0 1em var(--black-clr), 0 0 1.2em var(--black-clr);
 }
 
 header{
