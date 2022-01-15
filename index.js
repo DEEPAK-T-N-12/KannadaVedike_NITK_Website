@@ -34,7 +34,14 @@ $(document).ready(function () {
 
 // translator button function ends here 
 
+// adding header and footer 
+
 header.innerHTML=`
+                    <div id="preloader">
+                        <div class="load">
+                        <hr/><hr/><hr/><hr/>
+                        </div>
+                    </div>
                     <header class="flex px-3">
                     <div class="languageSection flex">
                     <img class="m-auto" src="/icons/language.svg" width="20" height="20" alt="">
@@ -85,3 +92,9 @@ header.innerHTML=`
 `;
 
 footer.innerHTML=``;
+
+
+preloader.style.opacity = 0;
+setTimeout(() => {
+    preloader.style.display = "none";
+}, 1000);
