@@ -17,12 +17,12 @@ function translate_full_page() {
         $("#google_translate_element select").val("en");
         translate_dropdown.dispatchEvent(new Event('change'));
         translate_dropdown.dispatchEvent(new Event('change')); // Some weird bug; doesn't work without dispatching event twice
-        language.innerHTML="ಕನ್ನಡ";
+        language.innerHTML = "ಕನ್ನಡ";
     }
     else {
         $("#google_translate_element select").val("kn");
         translate_dropdown.dispatchEvent(new Event('change'));
-        language.innerHTML="English";
+        language.innerHTML = "English";
     }
 }
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 // adding header and footer 
 
-header.innerHTML=`
+header.innerHTML = `
                     <div id="preloader">
                         <div class="load">
                         <hr/><hr/><hr/><hr/>
@@ -44,8 +44,8 @@ header.innerHTML=`
                     </div>
                     <header class="flex px-3">
                     <div class="languageSection flex">
-                    <img class="m-auto" src="/icons/language.svg" width="20" height="20" alt="">
-                    <div id="language" class="m-auto pl-1" onclick="translate_full_page()" role="button">
+                    <img class="m-auto" src="icons/language.svg" width="20" height="20" alt="">
+                    <div id="language" class="m-auto pl-1 notranslate btn" onclick="translate_full_page()">
                         ಕನ್ನಡ
                     </div>
                     </div>
@@ -57,7 +57,7 @@ header.innerHTML=`
                     </header>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom ">
                     <a class="navbar-brand" href="#">
-                    <img id="logo" src="/images/logo.png" width="100" height="100" alt="">
+                    <img id="logo" src="images/logo.png" width="100" height="100" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,34 +67,35 @@ header.innerHTML=`
                     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                        <a class="nav-link" href="/index.html">home</a>
+                        <a class="nav-link" href="/">home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#about">about us</a>
+                        <a class="nav-link" href="/#about">about us</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="events.html">events</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">social activities</a>
+                        <a class="nav-link" href="social.html">social activities</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">alumni</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">contact us</a>
-                        </li>
-                        <li class="nav-item">
                         </li>
                     </ul>
                     </div>
                     </nav>
 `;
 
-footer.innerHTML=``;
+// footer.innerHTML=`
+// `;
 
 
 preloader.style.opacity = 0;
 setTimeout(() => {
     preloader.style.display = "none";
 }, 1000);
+
+
+// $('.carousel').carousel({
+//     interval: 2000, keyboard: false, pause: false
+// })
