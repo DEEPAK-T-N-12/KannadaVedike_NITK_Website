@@ -127,9 +127,9 @@ footer.innerHTML=`
                             <div class="footer-col">
                                 <h4>follow us</h4>
                                 <div class="social-links">
-                                    <a href="https://m.facebook.com/kannadavedikenitk/"><img src="icons/facebook.svg" alt="" height="40" width="40"></a>
-                                    <a href="https://www.instagram.com/kannadavedike_nitk/"><img src="icons/insta.svg" alt="" height="40" width="40"></a>
-                                    <a href="https://twitter.com/kv_nitk"><img src="icons/twitter.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://m.facebook.com/kannadavedikenitk/" target="_blank"><img src="icons/facebook.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://www.instagram.com/kannadavedike_nitk/" target="_blank"><img src="icons/insta.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://twitter.com/kv_nitk" target="_blank"><img src="icons/twitter.svg" alt="" height="40" width="40"></a>
                                 </div>
                             </div>
                         </div>
