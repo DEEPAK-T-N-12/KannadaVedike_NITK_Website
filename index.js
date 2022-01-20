@@ -144,8 +144,8 @@ footer.innerHTML=`
 
 // preloader starts here 
 function load(){
-    preloader.style.opacity = 0;
     setTimeout(() => {
+        preloader.style.opacity = 0;
         preloader.style.display = "none";
     }, 1000);
 }
