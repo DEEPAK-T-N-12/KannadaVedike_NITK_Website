@@ -120,7 +120,7 @@ a, a:hover, a:focus, a:active {
 #logo{
     position: absolute;
     top: 18px;
-    z-index: 1;
+    z-index: 90;
     border-radius: 100%;
 }
 
@@ -284,7 +284,7 @@ figure img {
 }
 figure figcaption {
     position: absolute;
-    bottom: -262px;
+    bottom: -237px;
     left: 0;
     width: 100%;
     margin: 0;
@@ -370,6 +370,20 @@ ul{
   .carousel-indicators{
       bottom: 0;
   }
+  .navbar-nav{
+    /* background: var(--black-clr); */
+    background-color: #181818;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    padding-top: 55px;
+    z-index: 50;
+   }
+   .nav-link{
+       margin: 1rem 0;
+       text-align: center;
+   }
 }
 
 

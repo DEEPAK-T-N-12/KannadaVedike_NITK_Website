@@ -117,8 +117,8 @@ footer.innerHTML=`
                             <div class="footer-col">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="/#about">About us</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html#about">About us</a></li>
                                     <li><a href="events.html">Events</a></li>
                                     <li><a href="social.html">Social Activities</a></li>
                                     <li><a href="#">alumni</a></li>
