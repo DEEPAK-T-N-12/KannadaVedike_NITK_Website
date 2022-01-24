@@ -57,6 +57,10 @@ body{
     color: var(--white-clr);
 }
 
+.black-txt{
+    columns: var(--black-clr);
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -69,17 +73,6 @@ a, a:hover, a:focus, a:active {
 .flex-c{
     display: flex;
     flex-direction: column;
-}
-
-.title:after{   
-    content: "";
-    position: relative;
-    display: block;
-    top: 0;
-    left: 0;
-    background: var(--yellow-second-shade);
-    height: 3px;
-    width: 10px;
 }
 
 
@@ -184,13 +177,30 @@ nav{
 }
 
 .carousel-img{
-    object-fit: cover;
+    position: relative;
+    top: -250px;
     width: 100%;
     height: auto; 
 }
 
 .carousel-indicators{
     bottom: 100px;
+}
+
+#about{
+    position: relative;
+}
+
+#about:after{
+    content: '';
+    background-color: #f7f7f4;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 .about-card{
@@ -284,7 +294,7 @@ figure img {
 }
 figure figcaption {
     position: absolute;
-    bottom: -237px;
+    bottom: -295px;
     left: 0;
     width: 100%;
     margin: 0;
@@ -302,6 +312,8 @@ figure figcaption h3 {
 figure figcaption p {
     font-size: 14px;
     line-height: 1.75;
+    overflow-y: scroll;
+    height: 200px;
 }
 figure figcaption button {
     position: relative;
@@ -386,6 +398,13 @@ ul{
    }
 }
 
+@media (max-width: 1300px) {
+    .carousel-img{
+        top: 0;
+    }
+
+}
+
 
 /* footer section starts here  */
 *{
@@ -415,10 +434,12 @@ ul{
     padding-bottom: 0;
     line-height: 2;
 }
+
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -427,6 +448,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
+
 .footer-col h4::before{
 	content: '';
 	position: absolute;
@@ -437,9 +459,11 @@ ul{
 	box-sizing: border-box;
 	width: 100%;
 }
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
 .footer-col ul li a,.footer-col p{
 	font-size: 16px;
 	color: #ffffff;
@@ -449,6 +473,7 @@ ul{
 	display: block;
 	transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover{
 	color: #ffffff;
 }
@@ -458,6 +483,7 @@ ul{
     justify-content: space-between;
     padding: 0 3rem;
 }
+
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -499,6 +525,4 @@ ul{
     flex-direction: column;
 }
 }
-
-
 /* footer section ends here  */
