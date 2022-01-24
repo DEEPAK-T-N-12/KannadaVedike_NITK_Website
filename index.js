@@ -44,7 +44,7 @@ header.innerHTML = `
                     </div>
                     <header class="flex px-3">
                     <div class="languageSection flex">
-                    <img class="m-auto" src="/icons/language.svg" width="20" height="20" alt="">
+                    <img class="m-auto" src="icons/language.svg" width="20" height="20" alt="">
                     <div id="language" class="m-auto pl-1 notranslate btn" onclick="translate_full_page()">
                         ಕನ್ನಡ
                     </div>
@@ -56,7 +56,7 @@ header.innerHTML = `
                     </div>
                     </header>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom ">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/index.html">
                     <img id="logo" src="/images/logo.jpg" width="100" height="100" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -92,7 +92,7 @@ footer.innerHTML=`
                         <div class="row">
                             <div class="footer-col first">
                                 <div class="flex">
-                                    <img src="/images/logo.jpg" height="75" width="75" alt="" style="border-radius: 100%;">
+                                    <img src="images/logo.jpg" height="75" width="75" alt="" style="border-radius: 100%;">
                                     <h4 class="white-txt my-auto ml-2 font-weight-bold">KANNADA VEDIKE</h4>
                                 </div>
                             </div>
@@ -127,9 +127,9 @@ footer.innerHTML=`
                             <div class="footer-col">
                                 <h4>follow us</h4>
                                 <div class="social-links">
-                                    <a href="https://m.facebook.com/kannadavedikenitk/" target="_blank"><img src="/icons/facebook.svg" alt="" height="40" width="40"></a>
-                                    <a href="https://www.instagram.com/kannadavedike_nitk/" target="_blank"><img src="/icons/insta.svg" alt="" height="40" width="40"></a>
-                                    <a href="https://twitter.com/kv_nitk" target="_blank"><img src="/icons/twitter.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://m.facebook.com/kannadavedikenitk/" target="_blank"><img src="icons/facebook.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://www.instagram.com/kannadavedike_nitk/" target="_blank"><img src="icons/insta.svg" alt="" height="40" width="40"></a>
+                                    <a href="https://twitter.com/kv_nitk" target="_blank"><img src="icons/twitter.svg" alt="" height="40" width="40"></a>
                                 </div>
                             </div>
                         </div>
