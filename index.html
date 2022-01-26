@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kannada Vedike | Home</title>
@@ -49,7 +50,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="hero" class="container-fluid text-center px-0 notranslate">
+        <div id="hero" class="container-fluid text-center px-0 notranslate" data-aos="slide-up" data-aos-offset="-20" data-aos-delay="1000">
             <p class="hero left-hero">
                 ಎಲ್ಲಾದರೂ ಇರು ಎಂತಾದರು ಇರು <br> ಎಂದೆಂದಿಗು ನೀ ಕನ್ನಡವಾಗಿರು
             </p>
@@ -63,7 +64,7 @@
     </div>
     <div class="flag"></div>
     <div id="about" class="section">
-        <h2 class="mt-4 text-center font-weight-bold black-txt title">About Us</h2>
+        <h2 class="mt-4 text-center font-weight-bold black-txt title" data-aos="fade">About Us</h2>
         <!-- <div class="about-card mx-auto my-4" style="max-width: 1200px;">
             <div class="about-img">
                 <img class="px-3 my-3" src="images/about.jpg" alt="" width="100%">
@@ -78,9 +79,9 @@
         </div> -->
         <div class="about-card mx-auto my-4" style="max-width: 1200px;">
             <div class="about-img">
-                <img class="px-3 my-3" src="images/about2.jpg" alt="" width="100%">
+                <img class="px-3 my-3" src="images/about2.jpg" alt="" width="100%" data-aos="slide-right">
             </div>
-            <span class="about-content px-5 py-auto" style="line-height: 1.8;">
+            <span class="about-content px-5 py-auto" style="line-height: 1.8;" data-aos="slide-left">
                 <h2 class="font-weight-bold primary-text-clr">OUR VISION</h2>
                 <span style="color: #444;" class="text-left">
                     Preservation and Promotion of cultural significance of homeland, emphasis on mutual respect and
@@ -90,14 +91,15 @@
         </div>
         <br>
         <div class="about-card mx-auto my-4" style="max-width: 1200px;">
-            <span class="about-content px-5 py-auto" style="line-height: 1.8;">
+            <span class="about-content px-5 py-auto" style="line-height: 1.8;" data-aos="slide-right">
                 <h2 class="font-weight-bold primary-text-clr">OUR MISSION</h2>
                 <span style="color: #444;" class="text-right">
-                    Organising events, competitions, social activities to uphold team spirit among students of different background.
+                    Organising events, competitions, social activities to uphold team spirit among students of different
+                    background.
                 </span>
             </span>
             <div class="about-img">
-                <img class="px-3 my-3" src="images/about.jpg" alt="" width="100%">
+                <img class="px-3 my-3" src="images/about.jpg" alt="" width="100%" data-aos="slide-left">
             </div>
         </div>
     </div>
@@ -115,6 +117,22 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+    <!-- our aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out-sine', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+
+    </script>
 </body>
 
 </html>

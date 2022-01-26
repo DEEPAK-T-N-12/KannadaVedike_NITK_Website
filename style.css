@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
-    transition: 0.5s;
 }
 :root {
     --primary-clr:#F21D2F;
@@ -18,6 +17,7 @@
 body{
     top: 0 !important;
     position: static !important;
+    overflow-x: hidden;
     /* background: var(--black-clr); */
 }
 
@@ -83,7 +83,7 @@ a, a:hover, a:focus, a:active {
     position: fixed;
     height: 100vh;
     width: 100%;
-    transition: 0.5s all ease;
+    transition: 0.5s opacity ease;
     top: 0;
 }
 
@@ -95,6 +95,7 @@ a, a:hover, a:focus, a:active {
     width:100px;
     height:100px;
     z-index: 100;
+    transition: none;
   }
   .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
   
@@ -122,6 +123,9 @@ header{
     align-items: center;
     background-color: var(--yellow-first-shade);
     padding: 0 0.5rem;
+    margin-bottom: 70px;
+    z-index: 10;
+    /* position: relative; */
 }
 #language{
     font-weight: 500;
@@ -129,10 +133,19 @@ header{
 }
 nav{
     height: 70px;
+    position: absolute !important;
+    width: 100%;
+    top: 40px;
+    z-index: 50;
+    transition: none;
+    background-color: var(--black-clr);
 }
-     
-.navbar-custom {
-    background-color: var(--black-clr) !important;
+
+.scroll{
+    position: fixed !important;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+
 }
          
 .navbar-custom .navbar-brand,
@@ -196,6 +209,7 @@ nav{
     background-color: #f7f7f4;
     width: 700px;
     height: 700px;
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -211,7 +225,7 @@ nav{
 
 #hero{
     position: absolute;
-    top: calc(100vh - 100px);
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100px;
@@ -383,15 +397,18 @@ ul{
       bottom: 0;
   }
   .navbar-nav{
-    /* background: var(--black-clr); */
-    background-color: #181818;
     width: 100%;
     position: absolute;
-    top: 65px;
+    top: 70px;
     left: 0;
-    padding-top: 55px;
     z-index: 50;
    }
+   .nav-item{
+        background-color: #181818;
+   }
+    .nav-item:hover{
+        background-color: rgba(0, 0, 0, 1);
+    }
    .nav-link{
        margin: 1rem 0;
        text-align: center;

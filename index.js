@@ -55,7 +55,7 @@ header.innerHTML = `
                     </a>
                     </div>
                     </header>
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom ">
+                    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom ">
                     <a class="navbar-brand" href="/index.html">
                     <img id="logo" src="images/logo.jpg" width="100" height="100" alt="">
                     </a>
@@ -86,7 +86,7 @@ header.innerHTML = `
                     </nav>
 `;
 
-footer.innerHTML=`
+footer.innerHTML = `
                     <footer class="footer notranslate">
                     <div class="container">
                         <div class="row">
@@ -143,17 +143,36 @@ footer.innerHTML=`
 
 
 // preloader starts here 
-function load(){
+function load() {
     setTimeout(() => {
         preloader.style.opacity = 0;
         preloader.style.display = "none";
     }, 1000);
 }
 
-window.onload=load();
+window.onload = load();
 // preloader ends here
 
 
 $('.carousel').carousel({
     interval: 3500, keyboard: false, pause: false
+})
+
+// window.onscroll = () => {
+//     var navbar = document.getElementsByTagName("nav")[0];
+//     if (this.scrollY > 40) {
+//         navbar.classList.add("scroll");
+//     } else {
+//         navbar.classList.remove("scroll");
+//     }
+// }
+
+window.addEventListener("scroll", (e) => {
+    var navbar = document.getElementsByTagName("nav")[0];
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    if (scrollTop >= 40) {
+        navbar.classList.add("scroll");
+    }else{
+        navbar.classList.remove("scroll");
+    }
 })
