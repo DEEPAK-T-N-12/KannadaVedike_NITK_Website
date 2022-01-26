@@ -67,10 +67,10 @@ header.innerHTML = `
                     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                        <a class="nav-link" href="/index.html">home</a>
+                        <a class="nav-link" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="/index.html#about">about us</a>
+                        <a class="nav-link" href="index.html#about">about us</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="events.html">events</a>
