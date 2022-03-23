@@ -55,9 +55,7 @@ function showInstaFeed(num){
                 </div>
             </div>
         `;
-        console.log(url[postCount]);
     }
-    
     count = postCount;
 
     allFeeds.innerHTML += str;
